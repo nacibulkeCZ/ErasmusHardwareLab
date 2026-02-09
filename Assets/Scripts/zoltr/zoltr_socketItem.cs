@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 [RequireComponent(typeof(Rigidbody))]
 public class zoltr_socketItem : MonoBehaviour
@@ -56,17 +59,12 @@ public class zoltr_socketItem : MonoBehaviour
 
     private void OnGrab(SelectEnterEventArgs args)
     {
-        // When object is in the socket, grabbing it should make it dynamic and unsnap it from the socket
         if (attachedSocket != null)
         {
             attachedSocket.used = false;
             attachedSocket = null;
         }
-
-        // Always unparent when grabbed so it doesn't stay attached to hierarchy
         transform.SetParent(null);
-        
-        // Restore dynamic physics
         rb.isKinematic = false;
         rb.useGravity = true;
         rb.detectCollisions = true;
@@ -75,25 +73,18 @@ public class zoltr_socketItem : MonoBehaviour
 
     private void OnRelease(SelectExitEventArgs args)
     {
-        // Case 1: Released into a valid socket
         if (hoverSocket != null && !hoverSocket.used)
         {
             attachedSocket = hoverSocket;
             attachedSocket.used = true;
-            
-            // Parent to the socket so it moves with it
             transform.SetParent(attachedSocket.transform);
-            
-            // Make it static (kinematic) and snap to position
-            rb.isKinematic = true;          // Disable physics simulation
-            rb.useGravity = false;          // No gravity
-            rb.detectCollisions = false;    // Disable collisions
-            rb.interpolation = RigidbodyInterpolation.None; // VITAL: Prevents jitter/lag when parent moves
-            
-            // Snap position
+            rb.isKinematic = true;
+            rb.useGravity = false;
+            rb.detectCollisions = false;
+            rb.interpolation = RigidbodyInterpolation.None;
+
             transform.localPosition = attachedSocket.snapOffset;
-            
-            // Snap rotation based on the selected axis
+
             Vector3 alignAxis = Vector3.forward;
             switch (attachedSocket.snapAxis)
             {
@@ -105,17 +96,64 @@ public class zoltr_socketItem : MonoBehaviour
             }
             transform.localRotation = Quaternion.FromToRotation(alignAxis, Vector3.forward) * Quaternion.Euler(attachedSocket.snapRotation);
         }
-        // Case 2: Released into thin air
         else
         {
-            // Ensure proper unparenting
             transform.SetParent(null);
-
-            // Ensure gravity and physics are restored
             rb.isKinematic = false;
-            rb.useGravity = true;           // Explicitly enable gravity
+            rb.useGravity = true;
             rb.detectCollisions = true;
             rb.interpolation = RigidbodyInterpolation.Interpolate;
         }
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        if (Application.isPlaying)
+        {
+            if (hoverSocket != null)
+            {
+                Handles.color = Color.magenta;
+                Handles.DrawDottedLine(transform.position, hoverSocket.transform.position, 5f);
+                Handles.Label(Vector3.Lerp(transform.position, hoverSocket.transform.position, 0.5f), "Hovering");
+            }
+            if (attachedSocket != null)
+            {
+                Handles.color = Color.green;
+                Handles.DrawLine(transform.position, attachedSocket.transform.position);
+            }
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        // 1. Label
+        GUIStyle style = new GUIStyle();
+        style.normal.textColor = new Color(0.5f, 0.8f, 1f);
+        style.alignment = TextAnchor.MiddleCenter;
+        style.fontSize = 12;
+        Handles.Label(transform.position + Vector3.up * 0.15f, $"Item: {socket_type}", style);
+
+        // 2. Draw bounds of the item itself (Blue)
+        // This helps compare the item size to the socket "Ghost" size
+        Collider col = GetComponent<Collider>();
+        if (col != null)
+        {
+            Gizmos.color = new Color(0.5f, 0.8f, 1f, 0.2f);
+            Matrix4x4 oldMatrix = Gizmos.matrix;
+            Gizmos.matrix = transform.localToWorldMatrix;
+
+            if (col is BoxCollider box)
+            {
+                Gizmos.DrawWireCube(box.center, box.size);
+            }
+            else if (col is SphereCollider sphere)
+            {
+                Gizmos.DrawWireSphere(sphere.center, sphere.radius);
+            }
+
+            Gizmos.matrix = oldMatrix;
+        }
+    }
+#endif
 }
