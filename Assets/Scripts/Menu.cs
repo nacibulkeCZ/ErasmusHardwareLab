@@ -1,9 +1,10 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    public Dropdown sceneDropDown;
+    public TMP_Dropdown sceneDropDown;
     public Button playButton;
     public string[] sceneNames = { "SceneA", "SceneB", "SceneC" };
 
