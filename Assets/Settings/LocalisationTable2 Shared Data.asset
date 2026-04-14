@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: LocalisationTable2 Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: LocalisationTable2
+  m_TableCollectionNameGuidString: 54b1f328b4f6645478b96b670fa39c8d
+  m_Entries:
+  - m_Id: 3381855645696
+    m_Key: menu.interactiveMode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3748752388096
+    m_Key: menu.learningMode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4103749890048
+    m_Key: menu.quizMode
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1399802872803361041
+  references:
+    version: 2
+    RefIds:
+    - rid: 1399802872803361041
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1776162338273

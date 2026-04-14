@@ -4,7 +4,7 @@ public class SceneManagerForUI : MonoBehaviour
 {
     public void LoadScene(string sceneName)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+        SceneTransitionManager.Instance.LoadSceneSmooth(sceneName);
     }
     public void QuitApplication()
     {

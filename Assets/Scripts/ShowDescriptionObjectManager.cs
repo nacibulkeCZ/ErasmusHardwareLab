@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class ShowDescriptionObjectManager : MonoBehaviour
 {
-    public Material noiseMat;
-    public Material defaultMat;
-    public GameObject display;
     public TMP_Text nameText;
     public TMP_Text descriptionText;
 
+    [Header("Sounds")]
+    public SoundManager soundManager;
+    public AudioSource audioSource;
+    public AudioClip typeSound;
+    public AudioClip wipeSound;
+
     [HideInInspector] public ShowDescriptionObject currentlyShowObject;
+
+    private void Start()
+    {
+        if (soundManager == null)
+            soundManager = FindFirstObjectByType<SoundManager>();
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
+    }
 
     public static void TurnOnObject(ShowDescriptionObject obj)
     {
@@ -48,23 +59,45 @@ public class ShowDescriptionObjectManager : MonoBehaviour
 
     public IEnumerator SwitchToObject(ShowDescriptionObject obj)
     {
-        display.GetComponent<Renderer>().material = noiseMat;
+        if (soundManager != null)
+        {
+            soundManager.PlaySFX3D(wipeSound, transform.position, 0.5f);
+        }
         nameText.text = "";
         descriptionText.text = "";
         yield return new WaitForSeconds(0.5f);
+        currentlyShowObject = obj;
         if (obj != null)
         {
             nameText.text = obj.objectName;
             descriptionText.text = obj.description;
-            if (obj.objectImage != null)
-                display.GetComponent<Renderer>().material = obj.objectImage;
-            else
-                display.GetComponent<Renderer>().material = defaultMat;
-        } else
-        {
-            display.GetComponent<Renderer>().material = defaultMat;
+            yield return StartCoroutine(StartWriteAnimation());
         }
-            currentlyShowObject = obj;
-        Debug.Log("Switched display to object: " + (obj != null ? obj.objectName : "None"));
+    }
+
+    public IEnumerator StartWriteAnimation()
+    {
+        string fullName = nameText.text;
+        string fullDescription = descriptionText.text;
+        nameText.text = "";
+        descriptionText.text = "";
+        foreach (char c in fullName)
+        {
+            nameText.text += c;
+            if (soundManager != null)
+            {
+                soundManager.PlaySFX3D(typeSound, transform.position, 0.5f);
+            }
+            yield return new WaitForSeconds(0.05f);
+        }
+        foreach (char c in fullDescription)
+        {
+            descriptionText.text += c;
+            if (soundManager != null)
+            {
+                soundManager.PlaySFX3D(typeSound, transform.position, 0.5f);
+            }
+            yield return new WaitForSeconds(0.02f);
+        }
     }
 }

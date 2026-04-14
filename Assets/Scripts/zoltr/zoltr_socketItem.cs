@@ -166,10 +166,6 @@ public class zoltr_socketItem : MonoBehaviour
         // --- STRIP COMPONENTS ---
         // We need to remove logic and physics so the ghost is just visual
 
-        // Remove Rigidbody
-        Rigidbody ghostRb = currentGhost.GetComponent<Rigidbody>();
-        if (ghostRb) Destroy(ghostRb);
-
         // Remove Colliders (from root and all children)
         foreach (var c in currentGhost.GetComponentsInChildren<Collider>())
             Destroy(c);
@@ -185,6 +181,10 @@ public class zoltr_socketItem : MonoBehaviour
         // Remove Handle scripts if present
         foreach (var h in currentGhost.GetComponentsInChildren<zoltr_itemHandle>())
             Destroy(h);
+
+        // Remove Rigidbody
+        Rigidbody ghostRb = currentGhost.GetComponent<Rigidbody>();
+        if (ghostRb) Destroy(ghostRb);
 
         // --- APPLY MATERIAL ---
         // Find all renderers in the ghost hierarchy and apply the ghost material
