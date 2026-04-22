@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Erasmus.sln"
+    "dotnet.defaultSolution": "Erasmus.slnx"
 }
