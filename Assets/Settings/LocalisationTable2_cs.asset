@@ -1,0 +1,559 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LocalisationTable2_cs
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: 54b1f328b4f6645478b96b670fa39c8d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3381855645696
+    m_Localized: "Interaktivn\xED re\u017Eim"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3748752388096
+    m_Localized: "Re\u017Eim u\u010Den\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4103749890048
+    m_Localized: "Kv\xEDzov\xFD re\u017Eim"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7445426442240
+    m_Localized: "Sestavte a propojte po\u010D\xEDta\u010Dov\xFD hardware krok za
+      krokem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568772534272
+    m_Localized: "Prozkoumejte sou\u010D\xE1sti po\u010D\xEDta\u010De a nau\u010Dte
+      se, k \u010Demu slou\u017E\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7571825987584
+    m_Localized: "Otestujte sv\xE9 znalosti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884160
+    m_Localized: "Kl\xE1vesnice"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884161
+    m_Localized: "Toto je kl\xE1vesnice.\r\nKl\xE1vesnice je vstupn\xED za\u0159\xEDzen\xED,
+      kter\xE9 slou\u017E\xED k zad\xE1v\xE1n\xED textu, \u010D\xEDsel a p\u0159\xEDkaz\u016F\r\ndo
+      po\u010D\xEDta\u010De.\r\nPoka\u017Ed\xE9, kdy\u017E p\xED\u0161ete, kl\xE1vesnice
+      odes\xEDl\xE1 informace do syst\xE9mu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884162
+    m_Localized: "Chladic\xED ventil\xE1tor"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884163
+    m_Localized: "Toto je chladic\xED ventil\xE1tor. Ventil\xE1tory zaji\u0161\u0165uj\xED
+      proud\u011Bn\xED vzduchu uvnit\u0159 po\u010D\xEDta\u010Dov\xE9 sk\u0159\xEDn\u011B,\r\naby
+      odv\xE1d\u011Bly teplo vytv\xE1\u0159en\xE9 sou\u010D\xE1stmi, jako jsou CPU
+      a GPU.\r\nKdy\u017E po\u010D\xEDta\u010D pracuje, produkuje teplo. Pokud se
+      toto teplo neodv\xE1d\xED,\r\nsyst\xE9m se m\u016F\u017Ee p\u0159eh\u0159\xE1t
+      a po\u0161kodit. Ventil\xE1tory pom\xE1haj\xED udr\u017Eovat stabiln\xED teplotu\r\nt\xEDm,
+      \u017Ee odv\xE1d\u011Bj\xED hork\xFD vzduch ven a p\u0159iv\xE1d\u011Bj\xED
+      chladn\xFD vzduch dovnit\u0159.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884164
+    m_Localized: NVMe (M2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884165
+    m_Localized: "Toto je NVMe disk (Non-Volatile Memory Express), typ vysokorychlostn\xEDho\r\nSSD
+      \xFAlo\u017Ei\u0161t\u011B. Stejn\u011B jako jin\xE1 \xFAlo\u017En\xE1 za\u0159\xEDzen\xED
+      slou\u017E\xED k trval\xE9mu ukl\xE1d\xE1n\xED va\u0161ich soubor\u016F,\r\nprogram\u016F
+      a opera\u010Dn\xEDho syst\xE9mu. P\u0159ipojuje se p\u0159\xEDmo k\r\nz\xE1kladn\xED
+      desce a pou\u017E\xEDv\xE1 rychl\xFD komunika\u010Dn\xED syst\xE9m.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884166
+    m_Localized: HDD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884167
+    m_Localized: "Toto je pevn\xFD disk, neboli HDD. HDD slou\u017E\xED k dlouhodob\xE9mu
+      ukl\xE1d\xE1n\xED dat.\r\nUkl\xE1d\xE1 va\u0161e soubory, programy a opera\u010Dn\xED
+      syst\xE9m, i kdy\u017E je\r\npo\u010D\xEDta\u010D vypnut\xFD. Uvnit\u0159 HDD
+      jsou data ukl\xE1d\xE1na na rotuj\xEDc\xED disky zvan\xE9\r\nplotny. Proto\u017Ee
+      pou\u017E\xEDv\xE1 pohybliv\xE9 \u010D\xE1sti, je pomalej\u0161\xED ne\u017E
+      nov\u011Bj\u0161\xED \xFAlo\u017En\xE1 za\u0159\xEDzen\xED,\r\nale dok\xE1\u017Ee
+      ulo\u017Eit velk\xE9 mno\u017Estv\xED dat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884168
+    m_Localized: GPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884169
+    m_Localized: "Toto je GPU neboli grafick\xFD procesor.\r\nGPU je zodpov\u011Bdn\xE9
+      za vytv\xE1\u0159en\xED a zobrazov\xE1n\xED obr\xE1zk\u016F, vide\xED a\r\nanimac\xED
+      na obrazovce. Zpracov\xE1v\xE1 vizu\xE1ln\xED data a pom\xE1h\xE1 po\u010D\xEDta\u010Di\r\nvytv\xE1\u0159et
+      plynulou grafiku. To je d\u016Fle\u017Eit\xE9 zejm\xE9na pro hry, videa a\r\n3D
+      aplikace.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884170
+    m_Localized: CPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884171
+    m_Localized: "Toto je CPU neboli centr\xE1ln\xED procesorov\xE1 jednotka. \u010Casto
+      se ozna\u010Duje jako mozek\r\npo\u010D\xEDta\u010De. CPU zpracov\xE1v\xE1
+      instrukce, prov\xE1d\xED v\xFDpo\u010Dty a \u0159\xEDd\xED,\r\njak spolupracuj\xED
+      v\u0161echny ostatn\xED sou\u010D\xE1sti. Ka\u017Ed\xE1 \u010Dinnost, kterou
+      prov\xE1d\xEDte, nap\u0159\xEDklad\r\nspou\u0161t\u011Bn\xED program\u016F,
+      prohl\xED\u017Een\xED internetu nebo hran\xED her, z\xE1vis\xED na\r\nCPU."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884172
+    m_Localized: "Z\xE1kladn\xED deska"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884173
+    m_Localized: "Toto je z\xE1kladn\xED deska, hlavn\xED obvodov\xE1 deska po\u010D\xEDta\u010De.\r\nPropojuje
+      v\u0161echny intern\xED sou\u010D\xE1sti a umo\u017E\u0148uje jim spolu\r\nkomunikovat.
+      Z\xE1kladn\xED desku si m\u016F\u017Eete p\u0159edstavit jako centr\xE1ln\xED
+      syst\xE9m, kter\xFD\r\nspojuje v\u0161echny \u010D\xE1sti po\u010D\xEDta\u010De
+      dohromady. Bez n\xED by sou\u010D\xE1sti\r\nnemohly fungovat jako jeden celek.
+      V\u0161imn\u011Bte si r\u016Fzn\xFDch slot\u016F, konektor\u016F a\r\nvodiv\xFDch
+      cest na jej\xEDm povrchu. Ty umo\u017E\u0148uj\xED p\u0159enos dat a energie
+      mezi\r\nsou\u010D\xE1stmi.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884174
+    m_Localized: "Nap\xE1jec\xED zdroj (PSU)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884175
+    m_Localized: "Nap\xE1jec\xED zdroj neboli PSU je zodpov\u011Bdn\xFD za nap\xE1jen\xED
+      cel\xE9ho po\u010D\xEDta\u010De.\r\nP\u0159ev\xE1d\xED elektrickou energii
+      ze z\xE1suvky na pou\u017Eitelnou energii pro v\u0161echny\r\nintern\xED sou\u010D\xE1sti.\r\nPSU
+      dod\xE1v\xE1 spr\xE1vn\xE9 nap\u011Bt\xED do ka\u017Ed\xE9 \u010D\xE1sti syst\xE9mu
+      a zaji\u0161\u0165uje tak bezpe\u010Dn\xFD\r\na stabiln\xED provoz. Nap\xE1j\xED
+      z\xE1kladn\xED desku, CPU,\r\n\xFAlo\u017En\xE1 za\u0159\xEDzen\xED i grafickou
+      kartu, tak\u017Ee pat\u0159\xED mezi nejd\u016Fle\u017Eit\u011Bj\u0161\xED\r\nsou\u010D\xE1sti
+      syst\xE9mu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68960577884176
+    m_Localized: "Po\u010D\xEDta\u010Dov\xE1 sk\u0159\xED\u0148"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 343135964073984
+    m_Localized: "Po\u010D\xEDta\u010Dov\xE1 sk\u0159\xED\u0148 je vn\u011Bj\u0161\xED
+      konstrukce, kter\xE1 chr\xE1n\xED a organizuje intern\xED\r\nsou\u010D\xE1sti
+      po\u010D\xEDta\u010De. Uvnit\u0159 sk\u0159\xEDn\u011B najdete d\u016Fle\u017Eit\xFD
+      hardware,\r\njako je CPU, z\xE1kladn\xED deska, pam\u011B\u0165, \xFAlo\u017En\xE1
+      za\u0159\xEDzen\xED a chladic\xED syst\xE9m.\r\nSk\u0159\xED\u0148 tak\xE9
+      pom\xE1h\xE1 \u0159\xEDdit proud\u011Bn\xED vzduchu, aby se syst\xE9m nep\u0159eh\u0159\xEDval.
+      Nyn\xED, kdy\u017E jsou\r\nsou\u010D\xE1sti viditeln\xE9, je m\u016F\u017Eete
+      za\u010D\xEDt prozkoum\xE1vat.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000001
+    m_Localized: "Jak\xFD je hlavn\xED \xFA\u010Del po\u010D\xEDta\u010Dov\xE9 sk\u0159\xEDn\u011B?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000002
+    m_Localized: "Ukl\xE1dat programy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000003
+    m_Localized: "Chr\xE1nit a organizovat intern\xED sou\u010D\xE1sti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000004
+    m_Localized: Zobrazovat grafiku
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000005
+    m_Localized: "P\u0159ipojit se k internetu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000006
+    m_Localized: "Jak\xE1 je hlavn\xED funkce z\xE1kladn\xED desky?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000007
+    m_Localized: "Chladit syst\xE9m"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000008
+    m_Localized: "Propojovat sou\u010D\xE1sti a umo\u017E\u0148ovat jejich vz\xE1jemnou
+      komunikaci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000009
+    m_Localized: "Ukl\xE1dat soubory"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000010
+    m_Localized: Zobrazovat grafiku
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000011
+    m_Localized: "Co d\u011Bl\xE1 CPU?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000012
+    m_Localized: "Ukl\xE1d\xE1 soubory"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000013
+    m_Localized: "Zpracov\xE1v\xE1 instrukce a v\xFDpo\u010Dty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000014
+    m_Localized: "Zobrazuje obr\xE1zky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000015
+    m_Localized: "Nap\xE1j\xED po\u010D\xEDta\u010D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000016
+    m_Localized: "Jak\xE1 je role nap\xE1jec\xEDho zdroje (PSU)?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000017
+    m_Localized: "Ukl\xE1dat data"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000018
+    m_Localized: "P\u0159ev\xE1d\u011Bt elekt\u0159inu na vyu\u017Eitelnou energii
+      pro po\u010D\xEDta\u010D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000019
+    m_Localized: "Zobrazovat obr\xE1zky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000020
+    m_Localized: "Chladit syst\xE9m"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000021
+    m_Localized: "Kter\xE1 sou\u010D\xE1st je zodpov\u011Bdn\xE1 za vytv\xE1\u0159en\xED
+      grafiky a obraz\u016F?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000022
+    m_Localized: GPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000023
+    m_Localized: RAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000024
+    m_Localized: HDD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000025
+    m_Localized: PSU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000026
+    m_Localized: "Jak\xFD je hlavn\xED \xFA\u010Del HDD?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000027
+    m_Localized: "Chladit po\u010D\xEDta\u010D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000028
+    m_Localized: "Dlouhodob\xE9 ukl\xE1d\xE1n\xED soubor\u016F a program\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000029
+    m_Localized: "Zpracov\xE1n\xED grafiky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000030
+    m_Localized: "Nap\xE1jen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000031
+    m_Localized: "K \u010Demu slou\u017E\xED NVMe disk?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000032
+    m_Localized: "Vysokorychlostn\xED ukl\xE1d\xE1n\xED soubor\u016F a program\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000033
+    m_Localized: "Chlazen\xED syst\xE9mu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000034
+    m_Localized: "P\u0159ipojov\xE1n\xED extern\xEDch za\u0159\xEDzen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000035
+    m_Localized: "Zobrazov\xE1n\xED grafiky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000036
+    m_Localized: "Pro\u010D jsou v po\u010D\xEDta\u010Di d\u016Fle\u017Eit\xE9 chladic\xED
+      ventil\xE1tory?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000037
+    m_Localized: "P\u0159id\xE1vat sv\u011Bteln\xE9 efekty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000038
+    m_Localized: "Odv\xE1d\u011Bt teplo a p\u0159edch\xE1zet p\u0159eh\u0159\xEDv\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000039
+    m_Localized: "Ukl\xE1dat soubory"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000040
+    m_Localized: "P\u0159ipojovat hardwarov\xE1 za\u0159\xEDzen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000041
+    m_Localized: "Jak\xFD typ za\u0159\xEDzen\xED je kl\xE1vesnice?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000042
+    m_Localized: "V\xFDstupn\xED za\u0159\xEDzen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000043
+    m_Localized: "Vstupn\xED za\u0159\xEDzen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000044
+    m_Localized: "\xDAlo\u017En\xE9 za\u0159\xEDzen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000045
+    m_Localized: "Chladic\xED za\u0159\xEDzen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000046
+    m_Localized: "Jak\xE1 je funkce my\u0161i?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000047
+    m_Localized: Chladit CPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000048
+    m_Localized: "Ovl\xE1dat kurzor a pracovat s programy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000049
+    m_Localized: "Ukl\xE1dat data"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000050
+    m_Localized: Tisknout dokumenty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000051
+    m_Localized: "K \u010Demu slou\u017E\xED mikrofon?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000052
+    m_Localized: "Zobrazovat obr\xE1zky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000053
+    m_Localized: "Zachyt\xE1vat zvuk a odes\xEDlat ho do po\u010D\xEDta\u010De"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000054
+    m_Localized: "Ukl\xE1dat soubory"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000055
+    m_Localized: "P\u0159ipojit se k internetu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000056
+    m_Localized: "Co d\u011Bl\xE1 webkamera?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000057
+    m_Localized: "Nahr\xE1v\xE1 video a po\u0159izuje sn\xEDmky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000058
+    m_Localized: Tiskne dokumenty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000059
+    m_Localized: "Ukl\xE1d\xE1 data"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000060
+    m_Localized: "Dod\xE1v\xE1 energii"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000061
+    m_Localized: "Jak\xE1 je funkce monitoru?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000062
+    m_Localized: "Ukl\xE1dat programy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000063
+    m_Localized: "Zobrazovat vizu\xE1ln\xED v\xFDstup"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000064
+    m_Localized: "Zachyt\xE1vat zvuk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000065
+    m_Localized: "Dod\xE1vat elekt\u0159inu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000066
+    m_Localized: "Kter\xE9 za\u0159\xEDzen\xED vytv\xE1\u0159\xED fyzick\xE9 kopie
+      dokument\u016F?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000067
+    m_Localized: Monitor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000068
+    m_Localized: GPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000069
+    m_Localized: "Tisk\xE1rna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000070
+    m_Localized: Webkamera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000071
+    m_Localized: "Kv\xEDz dokon\u010Den!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000072
+    m_Localized: "V\xFDsledek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000073
+    m_Localized: "Ot\xE1zka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000074
+    m_Localized: "Skv\u011Bl\xE1 pr\xE1ce!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000075
+    m_Localized: "Nen\xED to \u0161patn\xE9, ale m\u016F\u017Eete to zvl\xE1dnout
+      je\u0161t\u011B l\xE9pe!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000076
+    m_Localized: "Zkuste to znovu a zlep\u0161ete sv\xE9 sk\xF3re!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000077
+    m_Localized: "Spr\xE1vn\xE9 odpov\u011Bdi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000078
+    m_Localized: "Nespr\xE1vn\xE9 odpov\u011Bdi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000079
+    m_Localized: "Vysok\xFD v\xFDkon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000080
+    m_Localized: "Dobr\xFD v\xFDkon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000081
+    m_Localized: "Pr\u016Fm\u011Brn\xFD v\xFDkon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000082
+    m_Localized: "N\xEDzk\xFD v\xFDkon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18949148217344
+    m_Localized: anenene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18949156605952
+    m_Localized: "\u017Dijeme jen jednou a pr\xE1v\u011B tady a pr\xE1v\u011B te\u010F
+      \u017Eijeme v\u0161ichni stejn\u011B, tak\u017Ee se nem\xE1\u0161 \u010Deho
+      b\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18949156605953
+    m_Localized: kohoutek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18949156605954
+    m_Localized: alokapotito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18949156605955
+    m_Localized: PABIC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18949156605956
+    m_Localized: "Milujeme tento sv\u011Bt, ajajaj."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000083
+    m_Localized: PC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000084
+    m_Localized: "Tisk\xE1rna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000085
+    m_Localized: Projektor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000086
+    m_Localized: 'Jazyk:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000087
+    m_Localized: "Ovl\xE1d\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000088
+    m_Localized: "Hlavn\xED menu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000089
+    m_Localized: "Nastaven\xED"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
